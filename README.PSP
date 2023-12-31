@@ -1,4 +1,5 @@
 ./ffmpegconfigure.sh
+# Enter each directory of the libs
 make clean
 make
 make install
