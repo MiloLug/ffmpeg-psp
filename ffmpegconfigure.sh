@@ -1,7 +1,8 @@
+PSPDEV=$(psp-config --pspsdk-path)
+
 CFLAGS='-I.. -I/${PSPDEV}/psp/sdk/include -I/${PSPDEV}/psp/include -g -O2 -G0' \
 ./configure --prefix="${PSPDEV}/psp" --cross-prefix=psp- --enable-cross-compile --target-os=psp --arch=psp --enable-hardcoded-tables \
 --enable-gpl --disable-vhook --enable-small \
 --disable-demuxers --disable-muxers \
 --disable-encoders --disable-decoders --disable-parsers --disable-protocols --disable-bsfs \
---enable-decoder=flv \
---enable-decoder=h264 
+--enable-decoder=ffv1
